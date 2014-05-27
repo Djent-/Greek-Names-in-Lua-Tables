@@ -9,8 +9,8 @@ greekOtherTitans = {"Asteria", "Astraeus", "Atlas", "Aura", "Dione", "Eos", "Epi
 "Eurynome", "Helios", "Clymene", "Asia", "Lelantos", "Leto", "Menoetius", "Metis", "Ophion", "Pallas",
 "Perses", "Prometheus", "Selene", "Styx"}
 greekGigantes = {"The Hekatonkheires", "Centimanes", "the Hundred-Handed Ones", "Briareus", "Aigaion",
-"Cottus", "Gyges", "Agrius", "Alcyoneus", "Aloadae", "Otos", "Otis", "Ephialtes". "Antaeus",
-"Argus Panoptes", "Cyclopes", "Arges", "Brontes", "Steropes", "Polyphemus", "Enceladus", 
+"Cottus", "Gyges", "Agrius", "Alcyoneus", "Aloadae", "Otos", "Otis", "Ephialtes", "Antaeus",
+"Argus Panoptes", "Cyclopes", "Arges", "Brontes", "Steropes", "Polyphemus", "Enceladus",
 "The Gegenees", "Geryon", "The Laestrygonians", "Orion", "Porphyrion", "Talos", "Tityos", "Typhon"}
 greekPersonifiedConcepts = {"Achlys", "Adephagia", "Adikia", "Aergia", "Agon", "Aidos", "Aisa",
 "Alala", "Alastor", "Aletheia", "The Algea", "Achos", "Ania", "Lupe", "Alke", "Amechania",
@@ -42,4 +42,18 @@ greekSeaDeities = {"Aegaeon", "Achelous", "Amphitrite", "Benthesikyme", "Brizo",
 "Raidne", "Teles", "Thelchtereia", "Thelxiope", "Thelxiepeia", "The Telchines", "Actaeus",
 "Argyron", "Atabyrius", "Chalcon", "Chryson", "Damon", "Demonax", "Damnameneus", "Dexithea",
 "Lycos", "Lyktos", "Lysagora", "Makelo", "Megalesius", "Mylas", "Nikon", "Ormenos", "Simon", "Skelmis",
-"Tethys", "Thalassa", "Thaumas" "Thoosa", "Triteia", "Triton", "Tritones"}
+"Tethys", "Thalassa", "Thaumas", "Thoosa", "Triteia", "Triton", "Tritones"}
+greekNames = {}
+function addTables(t)
+	for x = 1, #t do
+		table.insert(greekNames, t[x])
+	end
+end
+addTables(greekGods)
+addTables(greekPrimordialDeities)
+addTables(greekTwelveTitans)
+addTables(greekOtherTitans)
+addTables(greekGigantes)
+addTables(greekPersonifiedConcepts)
+addTables(greekChthonicDeities)
+addTables(greekSeaDeities)
