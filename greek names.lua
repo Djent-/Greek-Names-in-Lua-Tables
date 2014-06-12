@@ -44,7 +44,7 @@ greekSeaDeities = {"Aegaeon", "Achelous", "Amphitrite", "Benthesikyme", "Brizo",
 "Lycos", "Lyktos", "Lysagora", "Makelo", "Megalesius", "Mylas", "Nikon", "Ormenos", "Simon", "Skelmis",
 "Tethys", "Thalassa", "Thaumas", "Thoosa", "Triteia", "Triton", "Tritones"}
 greekNames = {}
-function addTables(t)
+local function addTables(t)
 	for x = 1, #t do
 		table.insert(greekNames, t[x])
 	end
